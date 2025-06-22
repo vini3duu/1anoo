@@ -1,0 +1,203 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #292929;  /* Fundo cinza escuro */
+    color: #f0f0f0;  /* Texto claro para contraste */
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #1c1c1c;  /* Navbar cinza escuro */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background-color: #343434;  /* Hover para links da navbar */
+    border-radius: 5px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Seção de Contagem Regressiva */
+.countdown-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #969696;  /* Fundo cinza escuro */
+    color: #000000;  /* Texto branco */
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Wrapper para os blocos da contagem */
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1px;
+    flex-wrap: wrap; /* Permite que os blocos quebrem linha quando necessário */
+}
+
+/* Bloco da contagem regressiva */
+.countdown-block {
+    display: inline-flex;
+    flex-direction: column; /* Coloca o número e o label em coluna */
+    align-items: center; /* Centraliza o conteúdo */
+    justify-content: center; /* Alinha o conteúdo centralizado */
+    width: 140px;
+    height: 160px;
+    background-color: #222;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Labels abaixo dos números (Dias, Horas, Minutos, Segundos) */
+.countdown-label {
+    font-family: 'Digital-7', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* Texto adicional abaixo da contagem */
+.countdown-text {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 1px;
+    font-weight: bold;
+    text-align: center; /* Garante que o texto fique centralizado */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .countdown-block {
+        width: 120px;
+        height: 140px;
+        font-size: 1.8rem;
+    }
+
+    .countdown-label {
+        font-size: 0.9rem;
+    }
+
+    .countdown-text {
+        font-size: 1.2rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-block {
+        width: 100px;
+        height: 120px;
+        font-size: 1.6rem;
+    }
+
+    .countdown-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .countdown-label {
+        font-size: 0.85rem;
+    }
+
+    .countdown-text {
+        font-size: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Botão "Fotos" Mais Bonito */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.open-new-tab-button {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #6f6f6f;  /* Cor vibrante para o botão (tom de laranja) */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;  /* Bordas arredondadas para o botão */
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.open-new-tab-button:hover {
+    background-color: #535353;  /* Cor mais escura ao passar o mouse */
+    transform: scale(1.1);  /* Aumento suave do tamanho do botão */
+}
+
+/* Estilos para o vídeo */
+.video-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+video {
+    width: 80%; /* Faz o vídeo ocupar 80% da largura da tela */
+    max-width: 800px; /* Limita a largura máxima a 800px */
+    height: auto; /* Mantém a proporção do vídeo */
+}
+

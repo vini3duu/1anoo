@@ -1,0 +1,128 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #292929;  /* Fundo cinza escuro */
+    color: #f0f0f0;  /* Texto claro para contraste */
+    text-align: center;  /* Centralizar todo o texto */
+}
+
+/* Header */
+header {
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Seção de Filmes e Séries (Quadrado Cinza) */
+.quadrado-cinza {
+    background-color: #424242;  /* Fundo cinza claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Sombra suave */
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Seção de Séries e Filmes */
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Item da Galeria */
+.item {
+    width: 250px;
+    background-color: #616161; /* Fundo cinza claro */
+    border-radius: 8px;
+    padding: 10px;
+    overflow: hidden;  /* Esconde o que ultrapassar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra suave */
+    text-align: center;  /* Centraliza o conteúdo dentro do item */
+}
+
+.item img {
+    width: 100%;           /* A imagem ocupa toda a largura do contêiner */
+    height: 150px;         /* Altura fixa para a imagem */
+    object-fit: cover;     /* Garante que a imagem se ajuste sem distorcer */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.item .info h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1c1c1c;  /* Navbar cinza escuro */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background-color: #343434;  /* Hover para links da navbar */
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .item {
+        width: 100%;
+    }
+
+    .navbar li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

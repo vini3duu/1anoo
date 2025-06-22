@@ -1,0 +1,455 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #292929;
+  color: #f0f0f0;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ff4d4d, #ffd700); /* vermelho → dourado */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1c1c1c;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  background-color: #343434;
+  border-radius: 5px;
+}
+
+.navbar a.nav-ultimos-dias {
+  color: #FFD700;
+  background-color: #1c1c1c;
+  border: 2px solid #FFD700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a.nav-ultimos-dias:hover {
+  background-color: #333333;
+  color: #fff;
+}
+
+/* Seção de Introdução */
+.intro {
+  text-align: center;
+  margin: 40px 0;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.countdown-container {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.countdown-text {
+  font-size: 1.5rem;
+}
+
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 100px;
+  background-color: #222;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.countdown-inner {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.countdown-label {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Seção de Memórias */
+.memorias {
+  padding: 30px;
+  text-align: center;
+  background-color: #3b3b3b;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.memorias h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.memorias p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.photo-button img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 350px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.photo-button img:hover {
+  transform: scale(1.05);
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/* Botão "Fotos" */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.open-new-tab-button {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #6f6f6f;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.open-new-tab-button:hover {
+  background-color: #535353;
+  transform: scale(1.1);
+}
+
+/* Seção de Carta */
+.carta {
+  padding: 30px;
+  background-color: #393939;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.carta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.carta p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Seção de Links */
+.links {
+  padding: 20px;
+  background-color: #444;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.spotify-btn,
+.youtube-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-btn {
+  background-color: #1DB954;
+  color: white;
+}
+
+.spotify-btn:hover {
+  background-color: #1aa34a;
+}
+
+.youtube-btn {
+  background-color: #FF0000;
+  color: white;
+}
+
+.youtube-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Seção Nossos Últimos Dias */
+.ultimos-dias {
+  padding: 30px;
+  text-align: center;
+  background-color: #222222;
+  border-radius: 8px;
+  margin: 30px auto;
+  max-width: 1000px;
+  color: #333;
+}
+
+.ultimos-dias h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.ultimos-dias p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.texto-data {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.texto-data.active {
+  display: block;
+}
+
+/* Animação do coração ao entrar */
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 3s;
+}
+
+.animation-container .heart {
+  font-size: 3rem;
+  animation: pulse 1.5s infinite;
+  color: #ffffff;
+}
+
+.animation-container .text {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: white;
+  animation: textPop 1s ease forwards;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes textPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .intro h2,
+  .memorias h2,
+  .carta h2 {
+    font-size: 1.8rem;
+  }
+
+  .carta p,
+  .memorias p {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    gap: 15px;
+  }
+
+  .photo-button img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .spotify-btn {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .countdown-container {
+    font-size: 1.2rem;
+  }
+
+  .photo-button img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .carta p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .photo-button img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+  }
+}
+

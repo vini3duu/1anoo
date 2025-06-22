@@ -1,0 +1,129 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Estilos da Navbar */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 20px;
+    justify-items: center;
+}
+
+.photo-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-button:hover img {
+    transform: scale(1.05);
+}
+
+.moment-text {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    display: none;
+}
+
+.moment-text.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Outras seções */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.countdown-container {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+button.open-new-tab-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.open-new-tab-button:hover {
+    background-color: #555;
+}
+
+/* Estilos de rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.data-btn {
+    background-color: #444;  /* cinza escuro */
+    color: #FFD700;           /* amarelo */
+    border: 2px solid #65621e;
+    padding: 10px 20px;
+    margin: 8px 0;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .data-btn:hover {
+    background-color: #FFD700;
+    color: #000000;
+  }
